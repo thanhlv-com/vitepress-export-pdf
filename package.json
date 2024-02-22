@@ -9,10 +9,10 @@
 	"homepage": "https://github.com/condorheroblog/vitepress-export-pdf#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/condorheroblog/vitepress-export-pdf.git"
+		"url": "git+https://github.com/thanhlv-com/vitepress-export-pdf.git"
 	},
 	"bugs": {
-		"url": "https://github.com/condorheroblog/vitepress-export-pdf/issues"
+		"url": "https://github.com/thanhlv-com/vitepress-export-pdf/issues"
 	},
 	"keywords": [
 		"vitepress-plugin-export-pdf",
