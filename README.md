@@ -1,3 +1,30 @@
+# Tại sao clone ?
+
+Repo này tôi clone và chỉ chỉnh sửa 1 điều duy nhất đó là khi thêm `routePatterns` sẽ sử dụng `routePatterns` và không mặc định thêm `"/**", "!/404.html",`
+
+Code cũ
+
+```
+	// set default routePatterns
+	if (Array.isArray(userConfig.routePatterns))
+		userConfig.routePatterns = ["/**", "!/404.html", ...userConfig.routePatterns];
+	else
+		userConfig.routePatterns = ["/**", "!/404.html"];
+
+```
+
+
+code mới
+
+```
+	// set default routePatterns
+	if (Array.isArray(userConfig.routePatterns))
+		userConfig.routePatterns = [...userConfig.routePatterns];
+	else
+		userConfig.routePatterns = ["/**", "!/404.html"];
+
+
+```
 # vitepress-export-pdf
 
 <p align="left">
