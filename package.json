@@ -1,7 +1,7 @@
 {
 	"name": "@thanhlv.com/vitepress-export-pdf",
 	"type": "module",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"packageManager": "pnpm@8.6.12",
 	"description": "VitePress export PDF",
 	"author": "CondorHero",
@@ -49,8 +49,7 @@
 		"node": ">=14.6.0"
 	},
 	"scripts": {
-		"release": "bumpp -r && pnpm -r publish",
-		"prepublishOnly": "nr build",
+		"release": "bumpp -r && pnpm unbuild && npm publish --access  public",
 		"dev": "esno ./src/commands/press-export-pdf.ts export ./example/vitepress-docs",
 		"coverage": "vitest run --coverage",
 		"lint:fix": "eslint . --fix",
